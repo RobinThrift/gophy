@@ -10,6 +10,7 @@ import (
 func main() {
 	cmds := []commands.Command{
 		commands.RandomIntCommand,
+		commands.IsPersonNiceCmd,
 	}
 
 	api := slack.New(os.Getenv("SLACK_TOKEN"))
