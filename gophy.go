@@ -11,6 +11,7 @@ func main() {
 	cmds := []commands.Command{
 		commands.RandomIntCommand,
 		commands.IsPersonNiceCmd,
+		commands.ConvertTimeCommand,
 	}
 
 	api := slack.New(os.Getenv("SLACK_TOKEN"))
